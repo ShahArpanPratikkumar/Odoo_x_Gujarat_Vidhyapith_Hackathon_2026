@@ -53,7 +53,7 @@ export default function Trips() {
                 </div>
 
                 <div className="filter-tabs" style={{ display: "flex", gap: 6, background: "var(--bg-secondary)", padding: 4, borderRadius: 12, border: "1px solid var(--border)" }}>
-                    {["All", "In Progress", "Scheduled", "Completed"].map(t => (
+                    {["All", "In Progress", "Scheduled", "Completed", "Cancelled"].map(t => (
                         <button
                             key={t}
                             onClick={() => setFilter(t)}
@@ -85,7 +85,7 @@ export default function Trips() {
                                 <td style={{ padding: "14px 18px", color: "var(--text-secondary)", fontSize: "0.82rem" }}>{t.date}</td>
                                 <td style={{ padding: "14px 18px" }}>
                                     <div style={{ fontWeight: 600, color: "var(--text-primary)", fontSize: "0.85rem" }}>{t.origin} → {t.destination}</div>
-                                    <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginTop: 2 }}>{t.distance} km</div>
+                                    <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginTop: 2 }}>{t.distance} km · ~{Math.round(t.distance / 60)} hrs</div>
                                 </td>
                                 <td style={{ padding: "14px 18px", color: "var(--text-secondary)", fontSize: "0.82rem" }}>{t.driver}</td>
                                 <td style={{ padding: "14px 18px" }}>
@@ -101,3 +101,4 @@ export default function Trips() {
         </Layout>
     );
 }
+// Trips Page View
