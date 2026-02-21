@@ -28,9 +28,14 @@ export default function Reports() {
                     <h1 className="page-title" style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: "1.8rem", fontWeight: 800, color: "var(--text-primary)", margin: 0 }}>Analytics & Reports</h1>
                     <p style={{ color: "var(--text-secondary)", fontSize: "0.85rem", marginTop: 4 }}>Fleet performance insights and financial overview</p>
                 </div>
-                <button className="btn btn-secondary" onClick={() => window.print()} style={{ background: "var(--bg-secondary)", border: "1px solid var(--border)", color: "var(--text-secondary)", padding: "10px 20px", borderRadius: 10, fontWeight: 600, cursor: "pointer" }}>
-                    🖨️ Print Report
-                </button>
+                <div style={{ display: "flex", gap: 10 }}>
+                    <button className="btn btn-secondary" onClick={() => window.print()} style={{ background: "var(--bg-secondary)", border: "1px solid var(--border)", color: "var(--text-secondary)", padding: "10px 20px", borderRadius: 10, fontWeight: 600, cursor: "pointer" }}>
+                        🖨️ Print Report
+                    </button>
+                    <button onClick={() => alert("CSV export coming soon!")} style={{ background: "#4f46e5", color: "#fff", padding: "10px 18px", borderRadius: 10, border: "none", fontWeight: 600, cursor: "pointer", fontSize: "0.85rem" }}>
+                        ↓ Export CSV
+                    </button>
+                </div>
             </div>
 
             <div className="kpi-grid" style={{ marginBottom: 24 }}>
@@ -127,3 +132,4 @@ export default function Reports() {
         </Layout>
     );
 }
+// Analytics Overview
