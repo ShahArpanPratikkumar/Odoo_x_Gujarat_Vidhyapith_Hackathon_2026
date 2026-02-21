@@ -40,6 +40,17 @@ const MOCK_TRIPS = [
   { id: 12, origin: "Rajkot", destination: "Ahmedabad", driver: "Nilesh Solanki", vehicle: "GJ-15-MN-6789", date: "2026-02-22", distance: 218, status: "Scheduled", cost: 3400 },
 ];
 
+const MOCK_FUEL_LOGS = [
+  { id: 1, date: "2026-02-14", vehicle: "GJ-01-AB-1234", fuelType: "Diesel", quantity: 60, cost: 5400, station: "HPCL Naroda" },
+  { id: 2, date: "2026-02-15", vehicle: "GJ-05-CD-5678", fuelType: "Diesel", quantity: 45, cost: 4050, station: "BPCL Naranpura" },
+  { id: 3, date: "2026-02-17", vehicle: "GJ-18-EF-9012", fuelType: "Diesel", quantity: 80, cost: 7200, station: "IOC Sarkhej" },
+  { id: 4, date: "2026-02-18", vehicle: "GJ-01-GH-3456", fuelType: "Diesel", quantity: 55, cost: 4950, station: "HPCL Bopal" },
+  { id: 5, date: "2026-02-19", vehicle: "GJ-07-IJ-7890", fuelType: "CNG", quantity: 30, cost: 900, station: "GGL CNG Maninagar" },
+  { id: 6, date: "2026-02-20", vehicle: "GJ-01-KL-2345", fuelType: "Diesel", quantity: 70, cost: 6300, station: "IOC Isanpur" },
+  { id: 7, date: "2026-02-21", vehicle: "GJ-15-MN-6789", fuelType: "Diesel", quantity: 50, cost: 4500, station: "BPCL Vastrapur" },
+  { id: 8, date: "2026-02-22", vehicle: "GJ-10-OP-1122", fuelType: "Petrol", quantity: 40, cost: 4800, station: "IOC Bodakdev" },
+];
+
 const MOCK_MAINTENANCE = [
   { id: 1, vehicle: "GJ-01-AB-1234", type: "Oil Change", date: "2026-03-05", status: "Scheduled", cost: 1200, priority: "Normal", technician: "Ravi Auto Works" },
   { id: 2, vehicle: "GJ-05-CD-5678", type: "Tyre Replacement", date: "2026-02-25", status: "Scheduled", cost: 8000, priority: "High", technician: "Bhavesh Tyres" },
@@ -118,6 +129,7 @@ export function FleetProvider({ children }) {
   const [drivers, setDrivers] = useState(MOCK_DRIVERS);
   const [trips, setTrips] = useState(MOCK_TRIPS);
   const [maintenance, setMaintenance] = useState(MOCK_MAINTENANCE);
+  const [fuelLogs, setFuelLogs] = useState(MOCK_FUEL_LOGS);
   const [backendOnline, setBackendOnline] = useState(false);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
@@ -295,6 +307,7 @@ export function FleetProvider({ children }) {
       drivers, setDrivers,
       trips, setTrips,
       maintenance, setMaintenance,
+      fuelLogs, setFuelLogs,
 
       backendOnline, loading,
 
@@ -315,4 +328,4 @@ export function FleetProvider({ children }) {
   );
 }
 
-export const useFleet = () => useContext(FleetContext);
+export const useFleet = () => useContext(FleetContext);// Global Fleet State Management
