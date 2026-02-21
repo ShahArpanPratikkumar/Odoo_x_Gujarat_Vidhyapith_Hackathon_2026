@@ -52,7 +52,7 @@ export default function Maintenance() {
                 </div>
 
                 <div className="filter-tabs" style={{ display: "flex", gap: 6, background: "var(--bg-secondary)", padding: 4, borderRadius: 12, border: "1px solid var(--border)" }}>
-                    {["All", "In Progress", "Scheduled", "Completed", "Overdue"].map(t => (
+                    {["All", "Scheduled", "In Progress", "Completed", "Overdue"].map(t => (
                         <button
                             key={t}
                             onClick={() => setFilter(t)}
@@ -100,3 +100,4 @@ export default function Maintenance() {
         </Layout>
     );
 }
+// Maintenance Tracker
