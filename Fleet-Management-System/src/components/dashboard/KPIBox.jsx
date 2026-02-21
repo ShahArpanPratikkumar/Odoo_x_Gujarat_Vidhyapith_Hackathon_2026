@@ -12,7 +12,7 @@ export default function KPIBox({ icon, label, value, sub, trend, trendUp, gradie
             transition: "transform 0.2s ease, box-shadow 0.2s ease",
             cursor: "default",
         }}
-            onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 12px 28px ${accent || "rgba(99,102,241,0.2)"}40`; }}
+            onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.boxShadow = `0 16px 36px ${accent || "rgba(99,102,241,0.25)"}50`; }}
             onMouseLeave={e => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
         >
             
@@ -75,3 +75,4 @@ export default function KPIBox({ icon, label, value, sub, trend, trendUp, gradie
         </div>
     );
 }
+// KPI Metric Box
