@@ -28,4 +28,4 @@ export default function RoutesConfig() {
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
-}
+}// Routes Registry
