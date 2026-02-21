@@ -40,7 +40,7 @@ export default function FuelLogs() {
                 </div>
 
                 <div className="filter-tabs" style={{ display: "flex", gap: 6, background: "var(--bg-secondary)", padding: 4, borderRadius: 12, border: "1px solid var(--border)" }}>
-                    {["All", "Diesel", "Petrol", "CNG", "Electric"].map(t => (
+                    {["All", "Diesel", "Petrol", "CNG", "Electric", "Hybrid"].map(t => (
                         <button
                             key={t}
                             onClick={() => setFilter(t)}
@@ -84,6 +84,13 @@ export default function FuelLogs() {
                     </tbody>
                 </table>
             </div>
+            <div style={{ marginTop: 14, display: "flex", justifyContent: "flex-end" }}>
+                <div style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 10, padding: "10px 20px", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                    Total Fuel Cost: <span style={{ fontWeight: 700, color: "var(--text-primary)" }}>₹{filtered.reduce((s, l) => s + l.cost, 0).toLocaleString()}</span>
+                    &nbsp;·&nbsp; Records: <span style={{ fontWeight: 700, color: "var(--text-primary)" }}>{filtered.length}</span>
+                </div>
+            </div>
         </Layout>
     );
 }
+// Refueling Logs
