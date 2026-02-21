@@ -364,3 +364,4 @@ export default function Settings() {
         </Layout>
     );
 }
+// App Settings View
