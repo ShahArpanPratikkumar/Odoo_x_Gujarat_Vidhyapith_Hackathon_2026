@@ -24,7 +24,7 @@ export default function Vehicles() {
       <div className="toolbar" style={{ display: "flex", gap: 12, marginBottom: 20, alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", gap: 8, alignItems: "center", flex: 1, maxWidth: 400 }} className="search-bar">
           <input
-            placeholder="Search by plate, make, model..."
+            placeholder="Search by plate, make, model, type..."
             style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: "1px solid var(--border)", background: "var(--bg-secondary)", color: "var(--text-primary)", outline: "none", fontFamily: "inherit" }}
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
@@ -54,4 +54,4 @@ export default function Vehicles() {
       </div>
     </Layout>
   );
-}
+}// Asset Management View
