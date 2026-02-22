@@ -25,10 +25,10 @@ const Ic = {
 
 
 const SPARK = {
-  vehicles: [{ v: 6 }, { v: 7 }, { v: 7 }, { v: 8 }, { v: 8 }, { v: 8 }],
-  drivers: [{ v: 5 }, { v: 5 }, { v: 6 }, { v: 6 }, { v: 7 }, { v: 5 }],
-  trips: [{ v: 3 }, { v: 5 }, { v: 6 }, { v: 9 }, { v: 10 }, { v: 12 }],
-  revenue: [{ v: 8 }, { v: 11 }, { v: 14 }, { v: 13 }, { v: 16 }, { v: 15.7 }],
+  vehicles: [{ v: 5 }, { v: 6 }, { v: 7 }, { v: 7 }, { v: 8 }, { v: 8 }],
+  drivers: [{ v: 5 }, { v: 5 }, { v: 6 }, { v: 6 }, { v: 7 }, { v: 7 }],
+  trips: [{ v: 3 }, { v: 5 }, { v: 6 }, { v: 9 }, { v: 11 }, { v: 12 }],
+  revenue: [{ v: 8 }, { v: 11 }, { v: 13 }, { v: 14 }, { v: 16 }, { v: 18 }],
 };
 
 
@@ -365,4 +365,4 @@ export default function Dashboard() {
       </div>
     </Layout>
   );
-}
+}// Dashboard View Optimizations
