@@ -94,3 +94,4 @@ export default function FuelLogs() {
     );
 }
 // Refueling Logs
+// Fuel Table Styles
