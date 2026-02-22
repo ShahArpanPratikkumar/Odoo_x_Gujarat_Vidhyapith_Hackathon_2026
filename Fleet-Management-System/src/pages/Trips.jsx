@@ -102,3 +102,4 @@ export default function Trips() {
     );
 }
 // Trips Page View
+// Trips Table Styles
