@@ -1,4 +1,13 @@
-
 * {
     box-sizing: border-box;
 }
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Global font defaults */
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}/* Heading Spacing */
