@@ -29,3 +29,4 @@ export default function RoutesConfig() {
     </Routes>
   );
 }// Routes Registry
+// Suspense Fallback Config
