@@ -56,3 +56,4 @@ export default function Vehicles() {
   );
 }// Asset Management View
 // Filter Tab Styles
+// Search String Logic
