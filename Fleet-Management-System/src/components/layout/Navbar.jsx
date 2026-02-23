@@ -280,3 +280,4 @@ export default function Navbar({ onMenuClick }) {
   );
 }// Top Navbar Header
 // Top Navbar Wrapper
+// Profile Dropdown Handler
