@@ -76,3 +76,4 @@ export default function KPIBox({ icon, label, value, sub, trend, trendUp, gradie
     );
 }
 // KPI Metric Box
+// KPIBox Props Check
